@@ -1,0 +1,28 @@
+{
+    "configurations": [ 
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:ifetch}",
+            "name": "Debug ifetch",
+            "program": "${workspaceFolder:ifetch}/.build/debug/ifetch",
+            "preLaunchTask": "swift: Build Debug ifetch"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:ifetch}",
+            "name": "Release ifetch",
+            "program": "${workspaceFolder:ifetch}/.build/release/ifetch",
+            "preLaunchTask": "swift: Build Release ifetch"
+        }
+    ]
+}
